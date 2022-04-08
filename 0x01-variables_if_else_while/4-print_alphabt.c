@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: Use `putchar` to print all letters but the letter 'q' and 'e'.
+ * Description: Get a random number and check its last digit, compare it with 5
  * Return: 0
  */
 int main(void)
@@ -10,11 +10,12 @@ int main(void)
 
 	while (c <= 'z')
 	{
-		if (c != 'q' && c != 'e')
+		if (c != 'e' && c != 'q')
+		{
 			putchar(c);
+		}
 		c++;
 	}
+
 	putchar('\n');
-
 	return (0);
-
